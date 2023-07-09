@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Moubsit_Aziz_exam_M1_IIBDCC_23"
+        tools:targetApi="31">
+        <activity
+            android:name="ma.enset.moubsit_aziz_exam_m1_iibdcc_23.IpInfoActivity"
+            android:exported="false" />
+        <!-- Create you own api key following directions here https://developers.google.com/maps/documentation/android-sdk/get-api-key  -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCqQe79Eri5IjmOdj0MJoL5L0wcNtMQd5g" />
+
+        <activity
+            android:name="ma.enset.moubsit_aziz_exam_m1_iibdcc_23.MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="ma.enset.moubsit_aziz_exam_m1_iibdcc_23.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
